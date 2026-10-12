@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: #fff;
+  font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  line-height: 1.6;
+  text-align: center;
+  background-image:
+    linear-gradient(rgba(12, 14, 30, 0.58), rgba(12, 14, 30, 0.78)),
+    url("hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header,
+main,
+footer {
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
+}
+
+a:hover,
+a:focus-visible {
+  color: #ffe08a;
+}
+
+#首頁 {
+  padding: clamp(4rem, 12vw, 9rem) 1rem;
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  line-height: 1.15;
+}
+
+#首頁 > p:not(#倒數) {
+  margin: 0;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+}
+
+#倒數 {
+  display: inline-block;
+  margin: 2rem 0 0;
+  padding: 0.9rem 1.5rem;
+  border: 2px solid #fff;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: #17152e;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.35);
+  font-size: clamp(1.15rem, 3vw, 1.75rem);
+  font-weight: 700;
+}
+
+#巡演場次 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0 5rem;
+}
+
+#巡演場次 h2 {
+  grid-column: 1 / -1;
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+}
+
+.card {
+  padding: 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 1rem;
+  color: #202033;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0.5rem 0;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: #403477;
+  font-weight: 700;
+}
+
+footer {
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 36rem) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+
+  body {
+    background-attachment: scroll;
+  }
+}

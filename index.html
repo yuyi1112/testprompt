@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="查看音樂巡演場次、售票資訊與演出倒數。">
+  <title>音樂巡演｜現場見</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav aria-label="主要導覽">
+      <a href="#首頁">巡演首頁</a>
+      <ul>
+        <li><a href="#巡演場次">巡演場次</a></li>
+        <li><a href="#倒數">演出倒數</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="首頁" aria-labelledby="主標題">
+      <h1 id="主標題">讓我們在現場相見</h1>
+      <p>全新音樂巡演即將啟程，準備好一起唱了嗎？</p>
+      <p id="倒數" aria-live="polite">演出倒數載入中</p>
+    </section>
+
+    <section id="巡演場次" aria-labelledby="場次標題">
+      <h2 id="場次標題">巡演場次</h2>
+      <div class="card">
+        <h3>台北場</h3>
+        <p><time datetime="2026-11-07">2026 年 11 月 7 日</time></p>
+        <p>台北流行音樂中心</p>
+        <a href="#購票">查看購票資訊</a>
+      </div>
+      <div class="card">
+        <h3>台中場</h3>
+        <p><time datetime="2026-11-14">2026 年 11 月 14 日</time></p>
+        <p>台中Legacy</p>
+        <a href="#購票">查看購票資訊</a>
+      </div>
+      <div class="card">
+        <h3>高雄場</h3>
+        <p><time datetime="2026-11-21">2026 年 11 月 21 日</time></p>
+        <p>高雄流行音樂中心</p>
+        <a href="#購票">查看購票資訊</a>
+      </div>
+      <div class="card">
+        <h3>台南場</h3>
+        <p><time datetime="2026-11-28">2026 年 11 月 28 日</time></p>
+        <p>台南文化中心</p>
+        <a href="#購票">查看購票資訊</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="購票">
+    <p>&copy; 2026 音樂巡演。演出資訊以主辦單位公告為準。</p>
+  </footer>
+</body>
+</html>
